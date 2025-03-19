@@ -12,9 +12,10 @@
   --color-green: #03a696;
   --color-grey: #f6f6f6;
   --color-dark-green: #42959b;
+  --color-dark-grey: #708188;
   --color-background: var(--color-white);
   --color-text: var(--color-black);
-  --color-box-img: var(--color-black);
+  --color-box-img: var(--color-dark-grey);
   --color-link-bg: var(--color-black);
   --color-input-border: var(--color-black);
   --font-family-raleway: "Raleway", sans-serif;
@@ -71,7 +72,7 @@ html {
 }
 
 body,
-[type=submit] {
+[type="submit"] {
   font-size: 1.6rem;
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -230,7 +231,7 @@ body,
 
 .bio {
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 0;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -256,7 +257,8 @@ body,
 .bio__twitter {
   color: var(--color-light-blue);
 }
-.bio__linkedin {
+.bio__linkedin,
+.bio__github {
   color: var(--color-dark-blue);
 }
 .bio__youtube {
@@ -311,7 +313,7 @@ body,
   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
 }
 .bio__pic {
-  width: 42.7rem;
+  width: 45rem;
 }
 
 .skills__list {
@@ -323,8 +325,8 @@ body,
 .skills__item {
   transition: var(--transition-timing);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .skills__title {
@@ -353,7 +355,7 @@ body,
 
 .projects__main {
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 7.5rem;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
@@ -404,7 +406,7 @@ body,
 
 .contact {
   -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   row-gap: 0;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -479,6 +481,14 @@ html:has(.toggle__checkbox:checked) {
   .section {
     grid-template-columns: 1fr;
   }
+
+  .bio__pic-content::before {
+    height: 46rem;
+    z-index: -1;
+    border-radius: 1.8rem;
+    box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+  }
+
   .bio__pic-content {
     grid-row: 1;
     justify-self: center;
@@ -514,6 +524,12 @@ html:has(.toggle__checkbox:checked) {
   }
   .header::before {
     z-index: 0;
+  }
+  .bio__pic-content::before {
+    height: 28rem;
+    z-index: -1;
+    border-radius: 1.8rem;
+    box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
   }
   .burger-menu {
     display: flex;
@@ -558,4 +574,4 @@ html:has(.toggle__checkbox:checked) {
     padding: 3rem 0;
     z-index: 1;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

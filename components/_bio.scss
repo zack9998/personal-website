@@ -31,7 +31,8 @@
     color: var(--color-light-blue);
   }
 
-  &__linkedin {
+  &__linkedin,
+  &__github {
     color: var(--color-dark-blue);
   }
 
@@ -88,13 +89,13 @@
     position: absolute;
     background-color: var(--color-box-img);
     width: 100%;
-    height: 46rem;
+    height: 26rem;
     z-index: -1;
     border-radius: 1.8rem;
     box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
   }
 
   &__pic {
-    width: 42.7rem;
+    width: 45rem;
   }
 }

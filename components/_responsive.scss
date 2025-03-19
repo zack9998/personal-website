@@ -8,6 +8,12 @@
   .container {
     row-gap: 8rem;
   }
+  .bio__pic-content::before {
+    height: 46rem;
+    z-index: -1;
+    border-radius: 1.8rem;
+    box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+  }
 
   .section {
     grid-template-columns: 1fr;
@@ -56,6 +62,12 @@
 
   .header::before {
     z-index: 0;
+  }
+  .bio__pic-content::before {
+    height: 26rem;
+    z-index: -1;
+    border-radius: 1.8rem;
+    box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
   }
 
   .burger-menu {
